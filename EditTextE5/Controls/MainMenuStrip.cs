@@ -10,9 +10,11 @@ namespace EditTextE5.Controls
 {
     internal class MainMenuStrip : MenuStrip
     {
+        private const string NAME = "MainMenuStrip";
+
         public MainMenuStrip()
         {
-            Name = "MainMenuStrip";
+            Name = NAME;
             Dock = DockStyle.Top;
 
             FileDropDownMenu();
