@@ -8,6 +8,7 @@ namespace EditTextE5
 {
     internal static class Program
     {
+        public static MainForm MainForm;
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -16,7 +17,10 @@ namespace EditTextE5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            MainForm = new MainForm();
+
+            Application.Run(MainForm);
         }
     }
 }
